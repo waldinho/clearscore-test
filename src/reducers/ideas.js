@@ -12,7 +12,6 @@ const ideas = (state = [], action) => {
         }
       ]
     case 'EDIT_IDEA':
-      console.log(state)
       return state.map(idea =>
         (idea.id === action.id)
             ? {...idea, 
